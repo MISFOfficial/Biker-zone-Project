@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone</title>
  
+    <!--Tailwind and DaisyUI Css CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <!--style css-->
+    <link rel="stylesheet" href="style.css">
+    <!--custom color-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary-color': '#E76F51',
+              'back-color': '#E76F511A',
+            }
+          }
+        }
+      }
+    </script>
+   
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar bg-white">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 2</a></li>
-                      <li><a>Item 3</a></li>
-                      <li><a>Item 4</a></li>
-                      <li><a>Item 5</a></li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                    <li><a>Item 3</a></li>
-                    <li><a>Item 4</a></li>
-                    <li><a>Item 5</a></li>
-                    <li><a>Item 6</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn bg-red-400 text-white border-0" >Sign Up</a>
-                </div>
-              </div>
-        </nav>
-    </header>
+<body class="font-poppins">
+  <!--header section-->
+  <header class="md:container mx-auto">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Products</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="text-[35px] font-bold">Bike Zone</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[16px] font-medium">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Products</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-primary-color font-bold text-[20px] text-white">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--main section-->
+  <main>
+    
+  </main>
+  <!--footer section-->
+  <footer>
+
+  </footer>
 </body>
 </html>
